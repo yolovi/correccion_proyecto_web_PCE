@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="biografia.html">Biografía</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="/" aria-current="page">Contáctame</a>
+        </nav>
+    </header>
+    <div class="encabezado">
+        <h1>Contáctame</h1>
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/vpbspaec.json"
+            trigger="loop"
+            colors="primary:#F7F7FF,secondary:#F7F7FF"
+            stroke="bold"
+            style="width:50px;height:50px">
+        </lord-icon>
+    </div>
+    <p>Rellena el siguiente formulario y me pondré en contacto lo antes posible!</p>
+    <form class="formulario">
+        <label for="formulario">Nombre y Apellido</label><br>
+        <input type="text" placeholder="ingresa tu nombre y apellido"><br>
+        <label for="formulario">Correo electrónico</label><br>
+        <input type="email" placeholder="ingresa tu email"><br>
+        <label for="formulario">Escribe tu mensaje</label><br>
+        <textarea rows="10" cols="16">Eescribe tu mensaje</textarea> <br>
+        <div class="switch-wrapper">
+            <label for="formulario">¿Aceptas recibir un correo por mi parte?</label>
+            <label class="switch">
+              <input type="checkbox" id="permiso">
+              <div class="slider"></div>
+              <div class="slider-card">
+                <div class="slider-card-face slider-card-front"></div>
+                <div class="slider-card-face slider-card-back"></div>
+              </div>
+            </label>
+          </div>
+    </form>
+    <h2>También puedes contactarme en mis rrss</h2>
+    <a href="https://www.linkedin.com/in/pcanalaecheverriag/">
+        <img src="elementos/icons8-linkedin.svg" alt="logo linkedin"/>
+    </a>  
+</body>
+</html>
