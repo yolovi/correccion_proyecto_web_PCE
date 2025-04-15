@@ -1,6 +1,10 @@
 * {
     font-family: system-ui, sans-serif;
     color: hsl(240, 100%, 98%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -141,6 +145,20 @@ h1 {
   0 12px 10px -3px #39a2db;
 }
 
+
+.foto {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+}
+
+.foto img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 1rem;
+}
+
 footer {
     margin-top: 50px;
     display: flex;
@@ -149,14 +167,8 @@ footer {
 }
 
 
-/* biografia.html*/
 
-.fotos img {
-    display: inline-flex;
-    flex-wrap: wrap;
-    max-height: 300px;
-    border-radius: 1rem;
-}
+/* biografia.html*/
 
 #titulo-bio {
     display: flex;
@@ -164,6 +176,21 @@ footer {
     justify-content: center;
     gap: 0.5rem; 
     text-align: center;
+}
+
+.fotosBio{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.fotosBio img {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 500px;
+    border-radius: 30px;
 }
 
 /* contacto.html*/
