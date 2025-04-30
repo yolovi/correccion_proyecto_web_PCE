@@ -31,19 +31,17 @@
     </div>
     <main>
         <p>En este apartado podrás encontrar una selección multimedia de mis favoritos</p>
-        <h2>Videos</h2> <br/>
-        <section class="multimedia" id="videos">
+        <section class="multimedia">
+            <h2>Videos</h2> <br/>
             <div class="video-youtube">
                 <!--un iframe sirve para incrustar otra página web dentro de la propia página, sin tener que salir, funciona como "ventanita"-->
                 <iframe 
                     src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1" 
                     title="YouTube video player" 
                     frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen>
-                </iframe>
-            </div>
-            <div class="video-youtube">
+                </iframe>            
                 <iframe 
                 src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1"  
                 title="Relaxing Jazz" 
@@ -53,12 +51,14 @@
               </iframe>
             </div>
         </section>
+        <section>
         <h2>Imágenes</h2>
-        <section class="imagenes">
+        <div class="imagenes">
             <img src="elementos/IMG_4868.jpg"/>
             <img src="elementos/IMG_4987.jpg"/>
             <img src="elementos/IMG_5109.jpg"/>            
-        </section>
+        </div>
+        </section>      
         <h2>Audio</h2>
         <audio id="audio" src="elementos/bienvenido_A28sPbb.mp3" controls></audio>
         <audio id="audio" src="elementos/oye-tienes-un-mensaje.mp3" controls></audio>
