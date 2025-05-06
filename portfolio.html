@@ -22,51 +22,42 @@
         <h1>Portfolio</h1>
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
         <lord-icon
-            src="https://cdn.lordicon.com/ugllxeyl.json"
+            src="https://cdn.lordicon.com/zhiiqoue.json"
             trigger="loop"
+            state="loop-cycle"
+            delay="1000"
             stroke="bold"
             colors="primary:#f7f7ff,secondary:#f7f7ff"
             style="width:50px;height:50px">
         </lord-icon>
     </div>
     <main>
-        <p>En este apartado podrás encontrar una selección multimedia de mis favoritos</p>
-        <section class="multimedia">
-            <h2>Videos</h2> <br/>
-            <div class="video-youtube">
-                <!--un iframe sirve para incrustar otra página web dentro de la propia página, sin tener que salir, funciona como "ventanita"-->
-                <iframe 
-                    src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>            
-                <iframe 
-                src="https://www.youtube.com/embed/6stlCkUDG_s?list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_""  
-                title="Relaxing Jazz" 
-                frameborder="0"                
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-              </iframe>
+        <p>En este apartado podrás encontrar mis principales trabajos</p>
+        <section class="grid-container">   
+                <div class="div1">
+                    <div class="iframeweb-container">
+                        <!--un iframe sirve para incrustar otra página web dentro de la propia página, sin tener que salir, funciona como "ventanita"-->
+                        <iframe src="https://revelify.eu/" class="web-preview"></iframe>
+                    </div>
+                </div>
+                <div class="div2">
+                    <div class="iframevideo-container">
+                        <iframe 
+                        src="https://www.youtube.com/embed/Xus2ASEqrp8?autoplay=1&mute=1" 
+                        allow="autoplay; encrypted-media"
+                        frameborder="0"
+                        class="video-youtube">
+                    </iframe>            
+                </div>                    
             </div>
-        </section>
-        <section id="imgs">
-        <h2>Imágenes</h2>
-        <div class="imagenes">
-            <img src='elementos/budapest.jpg'/>
-            <img src='elementos/fez.jpg'/>
-            <img src='elementos/rapanui2.jpg'/>
-            <img src='elementos/rapanui.jpg'/>            
-            <img src='elementos/srilanka.jpg'/>            
-            <img src='elementos/venecia.jpg'/>            
-        </div>
-        </section>      
-        <h2>Audio</h2>
-        <div id="audios">
-            <audio src="elementos/bienvenido_A28sPbb.mp3" controls></audio>
-            <audio src="elementos/oye-tienes-un-mensaje.mp3" controls></audio>
-        </div>  
+            <div class="div3">
+                <div class="imagenes-fitcam">
+                    <img src="elementos/fitcam1-nobg.png" class="fitcam" alt="Imagen fitcam">
+                    <img src="elementos/fitcam2-nobg.png" class="fitcam" alt="Imagen fitcam">
+                    <img src="elementos/fitcam3-nobg.png" class="fitcam" alt="Imagen fitcam">
+                </div>
+            </div>
+            </section>
     </main>
 </body>
 </html>
