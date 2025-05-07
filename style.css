@@ -12,28 +12,22 @@ body {
     background-image: url(elementos/fondo.svg);
     background-size: cover;
     max-height: 100vh;
-    margin: 20px 0px 0px 0px;
+    margin: 0;
     text-align: center;
-}
- 
-  
-small {
-    font-size: 0.6rem;
-}
-
-h1 {
-    padding: 30px;
+    overflow: hidden;
 }
 
 .menu {
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  width: 100vw;
+  display: flex;
 }
 
 .menu a {
-    display: inline-block;
-    flex-wrap: wrap;
     min-width: auto;
     padding: 3px 20px;
     border-radius: 1rem;
@@ -42,91 +36,145 @@ h1 {
     color:white;
     background-color:hsl(11, 50%, 42%);
     font-weight: lighter;
-    font-size: smaller;
-    box-shadow: inset black ;
+    font-size: 1.2rem;
 }
 
 .menu a[aria-current="page"] { /*indica el elemento actual, sirve para marcar la página actual en la que está del menú */
-    background-color: #23022E;
+    background-color: #25130D;
     color: hsl(240, 100%, 98%);
 }
 
 
 /* index.html*/
 
-#botones {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0.5rem;
+
+#body-home {
+    background: linear-gradient(
+    to right,
+        #543A28 0%,    
+        #543A28 30%,
+        #837C6B 30%,   
+        #837C6B 70%,
+        #543A28 70%,   
+        #543A28 100%
+    );
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-#palo {
-  width: 80%;
-  height: fit-content;
-}
-
-.tituloSecciones {
-    margin: 10px;
-}
-
-.botones a {
-    display: inline-flex;
-    flex-wrap: wrap;
+.contenedor-principal {
+    display: flex;
+    flex: 1;
     align-items: center;
-    justify-content: space-around;
-    width: 130px;
-    height: 40px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+    
+.contenedor-fondos {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+    
+.titulos-home {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    z-index: 0;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(2rem, 8vw, 6rem); 
     font-weight: bold;
-    cursor: pointer;
-    background-color: #4E6766;
-    color: #F7F7FF;
-    border: none;
-    border-radius: 5px;
-    transition: all .4s;
-    text-decoration: none;
+    margin: 0;
+    padding: 0rem;
+    color: #c1b0a5;
+    line-height: 1;
 }
 
-.botones a:hover {
-    border-radius: 5px;
-    transform: translateY(-10px);
-    box-shadow: 0 7px 0 -2px #F7F7FF,
-     0 15px 0 -4px #23022E,
-     0 16px 10px -3px #23022E;
+#letras-nombre{
+    font-size: clamp(1rem, 8vw, 4rem); 
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
 }
 
-.botones a:active {
- transition: all 0.2s;
- transform: translateY(-5px);
- box-shadow: 0 2px 0 -2px #f85959,
-  0 8px 0 -4px #39a2db,
-  0 12px 10px -3px #39a2db;
+.titulos-home > h1 {
+    animation: texto-expansion 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
 }
 
-
-.foto {
-    display: flex;
-    margin: 0px;
-    justify-content: center;
+.foto-fondo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
-.foto img {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 500px;
-    border-radius: 1rem;
+.foto-fondo > img {
+    height: 80vh;
+    width: auto;
+    max-height: 85vh;
+    object-fit: contain;
+    display: block;
+    animation: bounce-in-bottom 1.1s both;
 }
 
-footer {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
+@keyframes texto-expansion {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
+@keyframes bounce-in-bottom {
+    0% {
+                transform: translateY(500px);
+                animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+                transform: translateY(0);
+                animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+                transform: translateY(65px);
+                animation-timing-function: ease-in;
+    }
+    72% {
+                transform: translateY(0);
+                animation-timing-function: ease-out;
+    }
+    81% {
+                transform: translateY(28px);
+                animation-timing-function: ease-in;
+    }
+    90% {
+                transform: translateY(0);
+                animation-timing-function: ease-out;
+    }
+    95% {
+                transform: translateY(8px);
+                animation-timing-function: ease-in;
+    }
+    100% {
+                transform: translateY(0);
+                animation-timing-function: ease-out;
+    }
+}
+  
 
 /* biografia.html*/
 
