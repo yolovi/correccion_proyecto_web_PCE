@@ -18,6 +18,9 @@
             <a href="contacto.html">Contáctame</a>
         </nav>
     </header>
+    <!-- CORRECCION:
+        este div deberia ser un footer dentro de main. Recuerda que podemos tener un encabezado por cada pagina o seccion. Si es un encabezado usa header, y si es un encabezado debe ir con lo que encabeza.  
+    -->
     <div id="encabezado-portfolio">
         <h1>Portfolio</h1>
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
@@ -33,6 +36,9 @@
     </div>
     <main>
         <h2>En este apartado podrás encontrar mis principales trabajos</h2>
+        <!-- CORRECCION:
+            este section es un problema. Tal como lo tienes deberia ser un div porque solo agrupa las tarjetas de los proectos. Podrías meterlo seguido al main, y que coja el header anterior, el h2 y ya el resto de elementos. Cada tarjeta es un article por la misma razón, no las usas solo para agrupar sino que tiene sentido por si misma dentro del section, y te sobra los div contenedorX-multimedia y tarjeta-detalles.
+        -->
         <section class="multimedia-container"> 
             <div class="contenedor1-multimedia">  
                 <div class="tarjeta" id="revelify">
@@ -42,12 +48,12 @@
                         <div class="imagen-tarjeta">
                             <img src="elementos/porfolio1.png" alt="">
                          </div>
-                        </div>
-                        <a href="https://revelify.eu/" target="_blank">
-                            <button class="tarjeta-boton" >Revisar proyecto</button>
-                        </a>
                     </div>
+                    <a href="https://revelify.eu/" target="_blank">
+                            <button class="tarjeta-boton" >Revisar proyecto</button>
+                    </a>
                 </div>
+            </div>
                 <div class="contenedor2-multimedia">  
                     <div class="tarjeta" id="revelify">
                         <div class="tarjeta-detalles" >

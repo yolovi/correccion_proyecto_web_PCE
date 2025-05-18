@@ -1,3 +1,6 @@
+/* CORRECCION:
+    Comenta más estos archivos, agrupando según algún criterio. Intenta trabajar con clases atómicas, son más sencillas de aplicar, mantener y escalar. Mi recomendación sería usar clases atómicas y agruparlas por funcionalidad, eso te facilitará el trabajo.
+*/
 * {
     font-family: 'Ubuntu', sans-serif;
     color: hsl(240, 100%, 98%);
@@ -55,7 +58,9 @@ body {
 
 /* index.html*/
 
-
+/* CORRECCION:
+    margin y padding ya los has reseteado con el selector universal
+*/
 #body-home {
     background: linear-gradient(
     to right,

@@ -15,6 +15,9 @@
             <a href="index.html">Home</a>
             <a href="biografia.html">Biografía</a>
             <a href="portfolio.html">Portfolio</a>
+            <!-- CORRECCION:
+                aquí estás redirigiendo al directorio principal del royecto, lo que te devuelve al index.html, si quieres que redirija a la misma pag en a que estás usa #.  
+            -->
             <a href="/" aria-current="page">Contáctame</a>
         </nav>
     </header>
@@ -32,6 +35,9 @@
         <div class="formulario-container">
             <h2>Rellena el siguiente formulario y me pondré en contacto lo antes posible!</h2>
             <div class="cajaFormulario">
+            <!-- CORRECCION:
+                faltan atributos action y method.  
+            -->
             <form class="formulario">
                 <label for="formulario">Nombre y Apellido</label><br/>
                 <input type="text" placeholder="ingresa tu nombre y apellido"><br/>
@@ -52,6 +58,10 @@
             </form>
             </div>
         </div>
+        <!-- CORRECCION:
+            Este bloque de redes sería un aside, que se usa para contenido relacionado pero no central ni con sentido por si mismo.
+            Estas llamando multiples veces a lordicion, lo que puede provocar fallos. Es mejor que lo llames una sola vez al final del codumento.
+        -->
         <div class="redes-container"">
             <h2>También puedes encontrarme en mis rrss</h2>
             <div class="iconos-redes">

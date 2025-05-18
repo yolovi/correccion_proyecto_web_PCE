@@ -35,7 +35,9 @@
         <section class="contenedor-principal-bio">
 
             <div class="bio-container">
-                
+                <!-- CORRECCION:
+                    estos contenedor-X deberían ser articles, ya que es contenido que tiene sentido por si mismo dentro del section principal.
+                -->
                 <div class="contenedor-1">
                     <div class="icono-y-titulo">
                         <div>
@@ -50,6 +52,9 @@
                         </div>
                         <h3>FORMACIÓN</h3>
                     </div>
+                    <!-- CORRECCION:
+                        este div no es necesario.  
+                    -->
                     <div>
                         <p>FullStack Deveolper con estudios en Ingeniería, másters de innovación y empendedora. Sólida experiencia en gestión de proyectos, metodología agile y gestión de rrhh</p>
                     </div>
@@ -95,6 +100,9 @@
                     <h2>HABILIDADES TÉCNICAS</h2>
                     <div class="contenedor-iconos">
                         <div>
+                            <!-- CORRECCION:
+                                Utiliza rutas relativas en vez de absolutas, las absolutas pueden provocarte errores dependiendo de donde despliegues la web.  
+                            -->
                             <img src="/elementos/html.svg" alt="logo html">
                             <span>HTML</span>
                         </div>
